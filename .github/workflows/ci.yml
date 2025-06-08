@@ -1,0 +1,20 @@
+name: C Tests with Valgrind
+
+on: [push, pull_request]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y gcc make valgrind
+
+    - name: Make file executable
+      run: chmod +x test_script.sh
+      
+    - name: Build and run tests for the system
+      run: ./test_script.sh
