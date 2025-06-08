@@ -1,4 +1,4 @@
-![run-tests](https://github.com/disyspro/hw2-iliaschr/actions/workflows/ci.yml/badge.svg)
+![run-tests](https://github.com/iliaschr/NFS-System/actions/workflows/ci.yml/badge.svg)
 
 # Network File System (NFS) - Distributed File Synchronization
 
